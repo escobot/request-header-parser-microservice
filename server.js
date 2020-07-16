@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/*', function (req, res) {
+app.get('/api/whoami/', function (req, res) {
     const ipaddress = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || 
     req.connection.remoteAddress || 
     req.socket.remoteAddress || 

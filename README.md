@@ -36,7 +36,7 @@ docker run -p 49160:3000 -d pbgnz/request-header-parser-microservice
 Usage
 ```bash
 # get request
-http://localhost:3000/
+http://localhost:3000/api/whoami
 
 # expected response
 {"ipaddress":"::1","language":"en-US","software":"Windows NT 10.0; Win64; x64"}
