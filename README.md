@@ -30,7 +30,7 @@ Run using Docker:
 docker build -t pbgnz/request-header-parser-microservice .
 
 # run image
-docker run -p 49160:3000 -d pbgnz/request-header-parser-microservice
+docker run -p 3000:3000 -d pbgnz/request-header-parser-microservice
 ```
 
 Usage
