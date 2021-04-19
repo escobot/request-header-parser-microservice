@@ -20,7 +20,7 @@ Run using NPM:
 # install dependencies
 npm install
 
-# run app at localhost:3000
+# run app at localhost:8000
 npm start
 ```
 
@@ -30,13 +30,13 @@ Run using Docker:
 docker build -t pbgnz/request-header-parser-microservice .
 
 # run image
-docker run -p 3000:3000 -d pbgnz/request-header-parser-microservice
+docker run -p 8000:8000 -d pbgnz/request-header-parser-microservice
 ```
 
 Usage
 ```bash
 # get request
-http://localhost:3000/api/whoami
+http://localhost:8000/api/whoami
 
 # expected response
 {"ipaddress":"::1","language":"en-US","software":"Windows NT 10.0; Win64; x64"}
