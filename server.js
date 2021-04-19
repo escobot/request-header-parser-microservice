@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 
 app.get('/api/whoami/', function (req, res) {
     const ipaddress = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || 
@@ -11,5 +12,5 @@ app.get('/api/whoami/', function (req, res) {
     res.send({ipaddress, language, software});
 })
 
-app.listen(3000);
-console.log('App running on http://localhost:3000');
+app.listen(port);
+console.log('Server is running on port ' + port);
